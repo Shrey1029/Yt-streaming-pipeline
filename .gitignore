@@ -1,0 +1,9 @@
+.env
+awscliv2.zip
+/aws/
+__pycache__/
+*.pyc
+*.tfstate
+.terraform/
+.venv/
+tmp/
