@@ -1,0 +1,35 @@
+6g2xj5q\Yt-streaming-pipeline-codespace-miserable-broomstick-9797wpwvx96g2xj5q> Test-Path .env
+>> Get-Content .env | ForEach-Object { ($_ -split '=')[0] }
+True
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+response.json
