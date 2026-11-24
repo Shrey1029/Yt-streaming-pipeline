@@ -33,3 +33,5 @@ htmlcov/
 .DS_Store
 Thumbs.db
 response.json
+.terraform/
+**/.terraform/
