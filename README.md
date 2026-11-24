@@ -31,6 +31,7 @@ Bronze / Raw (S3): Raw JSON payloads captured per region (IN, GB, US, etc.) by y
 Silver / Curated (yt_pipeline.yt_curated): Cleaned, deduplicated, and schema-enforced Parquet files partitioned by dt and region.
 
 Gold / Analytics (yt_pipeline.daily_video_stats): Daily video-level rollups built via Athena CTAS (sql/11_create_daily_stats.sql), capturing end-of-day views, likes, comments, best daily rank, intra-day view deltas, and snapshot counts.
+
 ---
 
 ### Key Features
@@ -72,16 +73,18 @@ YouTube Data API v3 key (configured in your ingestion Lambda environment)
 cd Yt-streaming-pipeline
 
 python -m venv .venv
+
 # Windows
 .venv\Scripts\activate
+
 # macOS / Linux
 source .venv/bin/activate
 
 pip install streamlit boto3 awswrangler pandas plotly python-dotenv
 
 3. Environment Configuration
+   
 Create a .env file in the project root:
-
 AWS_ACCESS_KEY_ID=your_access_key_id
 AWS_SECRET_ACCESS_KEY=your_secret_access_key
 AWS_DEFAULT_REGION=ap-south-1
