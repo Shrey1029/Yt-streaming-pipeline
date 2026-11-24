@@ -1,10 +1,9 @@
 # YouTube Trending Analytics Pipeline
 
-!![AWS Lambda | S3 | Athena | Glue](https://img.shields.io/badge/AWS-Lambda%20%7C%20S3%20%7C%20Athena%20%7C%20Glue-FF9900?logo=amazonaws&logoColor=white)
+![AWS Lambda | S3 | Athena | Glue](https://img.shields.io/badge/AWS-Lambda%20%7C%20S3%20%7C%20Athena%20%7C%20Glue-FF9900?logo=amazonaws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-![Region](https://img.shields.io/badge/Region-ap--south--1-232F3E)
 
 An end-to-end, event-driven, serverless data pipeline that ingests YouTube trending metrics across regions, curates partitioned Parquet datasets on S3, models daily gold aggregates in Athena, and serves an interactive Streamlit dashboard for run-vs-run and category-level analysis.
 
