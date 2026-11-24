@@ -22,15 +22,18 @@ An end-to-end serverless data engineering pipeline and interactive Streamlit das
         |  On-Demand Refresh         |  Partitioned Parquet          v
         +----------------------------+------------------- Amazon S3 (Curated & Gold)
 ```
+---
 
-Data Layers
+### Data Layers
+
 Bronze / Raw (S3): Raw JSON payloads captured per region (IN, GB, US, etc.) by yt-ingest.
 
 Silver / Curated (yt_pipeline.yt_curated): Cleaned, deduplicated, and schema-enforced Parquet files partitioned by dt and region.
 
 Gold / Analytics (yt_pipeline.daily_video_stats): Daily video-level rollups built via Athena CTAS (sql/11_create_daily_stats.sql), capturing end-of-day views, likes, comments, best daily rank, intra-day view deltas, and snapshot counts.
+---
 
-Key Features
+### Key Features
 Serverless Ingestion & Transformation: Event-driven AWS Lambda functions (yt-ingest and yt-transform) provisioned with Terraform (infra/).
 
 Idempotent Gold Table Rebuilds: Automated MSCK REPAIR TABLE, single-statement DROP, S3 prefix cleanup, and CREATE TABLE AS SELECT (CTAS) rebuilds with explicit Athena execution status verification.
@@ -41,6 +44,7 @@ Built-In Data Quality Monitoring: Live Athena DQ checks auditing row counts, dis
 
 Full Documentation: Includes YouTube_Streaming_Data_Engineering_Project_Documentation.pdf detailing system design, troubleshooting, and architecture flowcharts.
 
+```
 ├── infra/                                                     # Terraform IaC for S3, IAM, Lambda, and Glue/Athena
 ├── sql/
 │   └── 11_create_daily_stats.sql                              # CTAS definition for yt_pipeline.daily_video_stats
@@ -51,10 +55,11 @@ Full Documentation: Includes YouTube_Streaming_Data_Engineering_Project_Document
 ├── YouTube_Streaming_Data_Engineering_Project_Documentation.pdf
 ├── .env.example
 └── README.md
+```
+---
 
+### Getting Started
 
-
-Getting Started
 1. Prerequisites
 Python 3.11+
 
