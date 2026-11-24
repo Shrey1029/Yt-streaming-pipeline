@@ -1,6 +1,6 @@
 # YouTube Trending Analytics Pipeline
 
-![AWS](https://img.shields.io/badge/AWS-Lambda%20%7C%20S3%20%7C%20Athena%20%7C%20Glue-FF9900?logo=amazonaws&logoColor=white)
+!![AWS Lambda | S3 | Athena | Glue](https://img.shields.io/badge/AWS-Lambda%20%7C%20S3%20%7C%20Athena%20%7C%20Glue-FF9900?logo=amazonaws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
